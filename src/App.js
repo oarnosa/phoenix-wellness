@@ -1,10 +1,21 @@
-import React, {Fragment} from "react"
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from "react-router-dom";
 
-import './App.css';
+import Home from "./pages/home/home.component.jsx";
 
 function App() {
   return (
-    <Fragment></Fragment>
+    <Router>
+      <Switch>
+            <Route path="/">
+              <Home/>
+            </Route>
+        </Switch>
+    </Router>
   );
 }
 
