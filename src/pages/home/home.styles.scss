@@ -1,1 +1,35 @@
 @import "../../assets/styles/main";
+
+.home {
+  height: 100vh;
+  background: $color-primary;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__content {
+    width: 70%;
+    max-width: 500px;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+  }
+
+  &__icon {
+    cursor: pointer;
+  }
+
+  &__text {
+    padding: 25px 0;
+  }
+
+  &__session {
+    color: $color-tertiary;
+    position: relative;
+  }
+}
