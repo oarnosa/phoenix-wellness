@@ -2,24 +2,24 @@
 
 .home {
   color: white;
-  background: $color-primary;
+  background-color: $color-primary;
+  overflow: hidden;
 
   &__landing {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 80vh;
+    background-color: $color-primary;
     text-align: center;
+    @include center;
 
     .landing__content {
-      width: 75%;
+      width: 82.5%;
       max-width: 500px;
     }
 
     .landing__socials {
       display: flex;
       justify-content: space-evenly;
-      padding: 10px 0;
+      padding: 15px 0;
     }
 
     .landing__icon {
@@ -27,6 +27,10 @@
     }
 
     .landing__brand {
+      &-emblem {
+        padding-top: 25px;
+      }
+
       &-name {
         padding: 25px 0;
       }
@@ -39,18 +43,47 @@
 
   &__mission {
     height: 100vh;
+    color: $color-primary;
     background-color: white;
+    clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+    @include center;
+
+    .mission__content {
+      width: 82.5%;
+    }
+
+    .mission__headline {
+      padding-top: 25px;
+
+      &-mantra {
+        color: $color-tertiary;
+      }
+    }
+
+    .mission__image {
+      padding: 25px 0;
+    }
   }
 
-  &__services {
-    height: auto;
+  &__plans {
+    height: 90vh;
+    @include center;
+
+    .plans__content {
+      width: 82.5%;
+      text-align: center;
+    }
   }
 
   &__reviews {
-    height: auto;
+    height: 90vh;
+    color: $color-primary;
+    background-color: white;
+    @include center;
   }
 
   &__contact {
-    height: auto;
+    height: 92.5vh;
+    @include center;
   }
 }

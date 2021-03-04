@@ -2,6 +2,7 @@
 
 // Helpers
 @import "./1-helpers/variables";
+@import "./1-helpers/mixins";
 
 // Tools
 @import "./2-tools/normalize";
@@ -9,4 +10,3 @@
 
 // Basics
 @import "./3-basics/global";
-@import "./3-basics/typography";

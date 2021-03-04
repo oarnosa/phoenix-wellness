@@ -1,0 +1,18 @@
+@import "../../assets/styles/main.scss";
+
+.nav {
+  height: 10vh;
+  @include center;
+
+  &__content {
+    width: 82.5%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    margin: 0;
+  }
+}

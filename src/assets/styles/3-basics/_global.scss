@@ -1,1 +1,19 @@
 // Modify global shared styles
+
+// Import Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400&display=swap");
+
+// Handle fonts and typogra
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+}

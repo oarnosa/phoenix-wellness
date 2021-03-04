@@ -1,0 +1,7 @@
+// Contains all mixins used in the project
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
