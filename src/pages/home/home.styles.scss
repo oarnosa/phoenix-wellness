@@ -1,35 +1,56 @@
 @import "../../assets/styles/main";
 
 .home {
-  height: 100vh;
-  background: $color-primary;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  background: $color-primary;
 
-  &__content {
-    width: 70%;
-    max-width: 500px;
-  }
-
-  &__socials {
+  &__landing {
+    height: 100vh;
     display: flex;
-    justify-content: space-evenly;
-    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .landing__content {
+      width: 75%;
+      max-width: 500px;
+    }
+
+    .landing__socials {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 10px 0;
+    }
+
+    .landing__icon {
+      cursor: pointer;
+    }
+
+    .landing__brand {
+      &-name {
+        padding: 25px 0;
+      }
+    }
+
+    .landing__session {
+      color: $color-tertiary;
+    }
   }
 
-  &__icon {
-    cursor: pointer;
+  &__mission {
+    height: 100vh;
+    background-color: white;
   }
 
-  &__text {
-    padding: 25px 0;
+  &__services {
+    height: auto;
   }
 
-  &__session {
-    color: $color-tertiary;
-    position: relative;
+  &__reviews {
+    height: auto;
+  }
+
+  &__contact {
+    height: auto;
   }
 }
