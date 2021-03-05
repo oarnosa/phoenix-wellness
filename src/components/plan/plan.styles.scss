@@ -1,1 +1,67 @@
 @import "../../assets/styles/main.scss";
+
+.plan {
+  width: 80vw;
+  border: $color-secondary 5px solid;
+  background-color: white;
+  margin: 35px auto;
+
+  &__icon {
+    margin: 25px 0 0;
+    width: 25%;
+    max-width: 150px;
+  }
+
+  &__title {
+    color: $color-tertiary;
+  }
+
+  &__price {
+    color: $color-primary;
+    font-size: 42px;
+  }
+
+  &__hour {
+    font-family: Oswald;
+    font-size: 16px;
+  }
+
+  &__list {
+    width: 75%;
+    text-align: left;
+    color: $color-secondary;
+    font-size: 15px;
+    padding-left: 20px;
+    margin: 0 auto 50px;
+    list-style: none;
+
+    > li {
+      line-height: 1.5em;
+
+      strong {
+        color: $color-tertiary;
+      }
+
+      &::before {
+        content: "✓";
+        color: $color-tertiary;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 700;
+        text-indent: -1.5em;
+      }
+    }
+  }
+
+  &--special {
+    border-color: $color-tertiary;
+  }
+
+  &--deal {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    background-color: $color-tertiary;
+    justify-self: top;
+  }
+}

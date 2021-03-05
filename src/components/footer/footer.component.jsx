@@ -5,9 +5,9 @@ import "./footer.styles.scss";
 const Footer = () => (
   <div className="footer">
     <div className="footer__content">
-      <h5 className="footer__info">
-        &copy; 2021 PHOENIX WELLNESS AND RECOVERY. ALL RIGHTS RESERVED.
-      </h5>
+      <h6 className="footer__info">
+        &copy; 2021 PHOENIX WELLNESS AND RECOVERY.
+      </h6>
     </div>
   </div>
 );

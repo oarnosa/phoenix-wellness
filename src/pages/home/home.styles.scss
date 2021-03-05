@@ -42,10 +42,10 @@
   }
 
   &__mission {
-    height: 100vh;
+    padding: 15vh 0 5vh;
     color: $color-primary;
     background-color: white;
-    clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(50% 10vh, 100% 0, 100% 100%, 0 100%, 0 0);
     @include center;
 
     .mission__content {
@@ -53,9 +53,7 @@
     }
 
     .mission__headline {
-      padding-top: 25px;
-
-      &-mantra {
+      &-tag {
         color: $color-tertiary;
       }
     }
@@ -63,11 +61,15 @@
     .mission__image {
       padding: 25px 0;
     }
+
+    .mission__statement {
+      line-height: 1.5em;
+    }
   }
 
   &__plans {
-    height: 90vh;
     @include center;
+    padding: 25px 0;
 
     .plans__content {
       width: 82.5%;
@@ -76,10 +78,16 @@
   }
 
   &__reviews {
-    height: 90vh;
+    padding: 5vh 0;
     color: $color-primary;
     background-color: white;
     @include center;
+
+    .reviews__headline {
+      &-tag {
+        color: $color-tertiary;
+      }
+    }
   }
 
   &__contact {
