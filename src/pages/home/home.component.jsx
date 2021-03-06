@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Nav from "../../components/nav/nav.component";
 import Plan from "../../components/plan/plan.component";
+import Review from "../../components/review/review.component";
 import Footer from "../../components/footer/footer.component";
 
 import "./home.styles.scss";
@@ -131,6 +132,9 @@ const Home = () => (
             REAL PEOPLE. REAL RESULTS.
           </h2>
         </div>
+        <Review />
+        <Review inverted />
+        <Review />
       </div>
     </section>
     <section className="home__contact">

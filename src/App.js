@@ -13,11 +13,16 @@ import {
   faInstagram,
   faLinkedinIn
 } from "@fortawesome/free-brands-svg-icons";
+import {
+  faStar
+} from "@fortawesome/free-solid-svg-icons";
+
 
 library.add(
   faFacebook,
   faLinkedinIn,
   faInstagram,
+  faStar
 );
 
 function App() {

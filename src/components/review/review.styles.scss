@@ -1,0 +1,24 @@
+@import "../../assets/styles/main.scss";
+
+.review {
+  padding: 1em 0;
+  line-height: 1.5em;
+
+  &__stars {
+    color: $color-tertiary;
+  }
+
+  &__author {
+    &-name {
+      color: $color-tertiary;
+      margin: 0;
+    }
+    &-title {
+      margin: 0;
+    }
+  }
+
+  &--inverted {
+    text-align: right;
+  }
+}

@@ -42,7 +42,7 @@
   }
 
   &__mission {
-    padding: 15vh 0 5vh;
+    padding: 15vh 0 25px;
     color: $color-primary;
     background-color: white;
     clip-path: polygon(50% 10vh, 100% 0, 100% 100%, 0 100%, 0 0);
@@ -78,10 +78,14 @@
   }
 
   &__reviews {
-    padding: 5vh 0;
+    @include center;
+    padding: 25px 0;
     color: $color-primary;
     background-color: white;
-    @include center;
+
+    .reviews__content {
+      width: 82.5%;
+    }
 
     .reviews__headline {
       &-tag {
