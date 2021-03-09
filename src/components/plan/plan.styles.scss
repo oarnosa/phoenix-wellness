@@ -32,7 +32,7 @@
     color: $color-secondary;
     font-size: 15px;
     padding-left: 20px;
-    margin: 0 auto 50px;
+    margin: auto;
     list-style: none;
 
     > li {
@@ -51,6 +51,11 @@
         text-indent: -1.5em;
       }
     }
+  }
+
+  &__book {
+    color: $color-tertiary;
+    margin: 2em 0;
   }
 
   &--special {
