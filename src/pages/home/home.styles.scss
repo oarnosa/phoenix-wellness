@@ -95,7 +95,39 @@
   }
 
   &__contact {
-    height: 92.5vh;
     @include center;
+
+    .contact__content {
+      width: 75%;
+      margin: 2em 0;
+
+      p {
+        line-height: 1.5em;
+      }
+
+      div > h5:first-of-type {
+        color: $color-tertiary;
+      }
+    }
+
+    .contact__headline {
+      color: $color-tertiary;
+    }
+
+    .contact__statement {
+      padding: 16px 0;
+    }
+
+    .contact__icons {
+      width: 50%;
+      margin: 22px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .contact__session {
+      margin: 2em 0;
+      color: $color-tertiary;
+    }
   }
 }

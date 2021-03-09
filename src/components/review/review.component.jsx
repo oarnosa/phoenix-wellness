@@ -10,7 +10,7 @@ const Review = ({ review, inverted }) => {
   for (let index = 0; index < stars; index++) {
     rating.push(
       <FontAwesomeIcon
-        id={index}
+        key={index}
         className="review__star"
         icon={["fas", "star"]}
       />

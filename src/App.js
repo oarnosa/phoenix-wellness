@@ -22,7 +22,7 @@ library.add(
   faFacebook,
   faLinkedinIn,
   faInstagram,
-  faStar
+  faStar,
 );
 
 function App() {

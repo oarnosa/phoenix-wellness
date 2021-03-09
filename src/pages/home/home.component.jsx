@@ -90,8 +90,9 @@ const Home = () => {
             <li>
               Manual treatment with focus on <strong>2</strong> problem areas
             </li>
-            <li>Percussion drill massage</li>
+            <li>Performance stretching</li>
             <li>Trigger point treatment</li>
+            <li>Percussion drill massage</li>
             <li>Instrument Assisted Soft Tissue Mobilization (IASTM)</li>
           </Plan>
           <Plan
@@ -104,8 +105,9 @@ const Home = () => {
             <li>
               Manual treatment with focus on <strong>3</strong> problem areas
             </li>
-            <li>Percussion drill massage</li>
+            <li>Performance stretching</li>
             <li>Trigger point treatment</li>
+            <li>Percussion drill massage</li>
             <li>Instrument Assisted Soft Tissue Mobilization (IASTM)</li>
             <li>Cupping therapy</li>
             <li>Transcutaneous Electrical Nerve Stimulation (TENS Unit)</li>
@@ -119,8 +121,9 @@ const Home = () => {
             <li>
               Manual treatment with focus on <strong>4</strong> problem areas
             </li>
-            <li>Percussion drill massage</li>
+            <li>Performance stretching</li>
             <li>Trigger point treatment</li>
+            <li>Percussion drill massage</li>
             <li>Instrument Assisted Soft Tissue Mobilization (IASTM)</li>
             <li>Cupping therapy</li>
             <li>Transcutaneous Electrical Nerve Stimulation (TENS Unit)</li>
@@ -149,7 +152,43 @@ const Home = () => {
       </section>
       <section className="home__contact">
         <div className="contact__content">
-          <p>THIS IS THE CONTACT SECTION</p>
+          <h3 className="contact__headline">OUR INFO</h3>
+          <h2 className="contact__headline-tag">CONTACT US.</h2>
+          <p className="contact__statement">
+            Your convenience is our top priority. At Phoenix we make scheduling
+            easy and go to you at a time that works best for you.
+          </p>
+          <div className="contact__info">
+            <div className="contact__phone">
+              <h5>PHONE</h5>
+              <h5>(786) 302 6104</h5>
+            </div>
+            <div className="contact__email">
+              <h5>EMAIL</h5>
+              <h5>PHXRECOVER@GMAIL.COM</h5>
+            </div>
+            <div className="contact__socials">
+              <h5>SOCIALS</h5>
+              <div className="contact__icons">
+                <FontAwesomeIcon
+                  className="contact__icon"
+                  icon={["fab", "facebook"]}
+                  size="lg"
+                />
+                <FontAwesomeIcon
+                  className="contact__icon"
+                  icon={["fab", "instagram"]}
+                  size="lg"
+                />
+                <FontAwesomeIcon
+                  className="contact__icon"
+                  icon={["fab", "linkedin-in"]}
+                  size="lg"
+                />
+              </div>
+            </div>
+          </div>
+          <h3 className="contact__session">BOOK A SESSION</h3>
         </div>
       </section>
       <Footer />
