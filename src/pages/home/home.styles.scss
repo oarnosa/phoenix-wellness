@@ -7,9 +7,9 @@
 
   &__landing {
     height: 80vh;
-    background-color: $color-primary;
-    text-align: center;
     @include center;
+    text-align: center;
+    background-color: $color-primary;
 
     .landing__content {
       width: 82.5%;
@@ -19,7 +19,7 @@
     .landing__socials {
       display: flex;
       justify-content: space-evenly;
-      padding: 15px 0;
+      padding: 1rem 0;
     }
 
     .landing__icon {
@@ -28,11 +28,11 @@
 
     .landing__brand {
       &-emblem {
-        padding-top: 25px;
+        padding-top: 1.5rem;
       }
 
       &-name {
-        padding: 25px 0;
+        padding: 1.5rem 0;
       }
     }
 
@@ -42,11 +42,11 @@
   }
 
   &__mission {
-    padding: 15vh 0 25px;
+    @include center;
+    padding: 15vh 0 1.5rem;
     color: $color-primary;
     background-color: white;
     clip-path: polygon(50% 10vh, 100% 0, 100% 100%, 0 100%, 0 0);
-    @include center;
 
     .mission__content {
       width: 82.5%;
@@ -59,17 +59,17 @@
     }
 
     .mission__image {
-      padding: 25px 0;
+      padding: 1.5rem 0;
     }
 
     .mission__statement {
-      line-height: 1.5em;
+      line-height: 1.5rem;
     }
   }
 
   &__plans {
     @include center;
-    padding: 25px 0;
+    padding: 1.5rem 0;
 
     .plans__content {
       width: 82.5%;
@@ -79,7 +79,7 @@
 
   &__reviews {
     @include center;
-    padding: 25px 0;
+    padding: 1.5rem 0;
     color: $color-primary;
     background-color: white;
 
@@ -96,14 +96,10 @@
 
   &__contact {
     @include center;
+    padding: 1.5rem 0;
 
     .contact__content {
-      width: 75%;
-      margin: 2em 0;
-
-      p {
-        line-height: 1.5em;
-      }
+      width: 82.5%;
 
       div > h5:first-of-type {
         color: $color-tertiary;
@@ -111,22 +107,24 @@
     }
 
     .contact__headline {
-      color: $color-tertiary;
+      &-tag {
+        color: $color-tertiary;
+      }
     }
 
     .contact__statement {
-      padding: 16px 0;
+      padding: 1rem 0;
     }
 
     .contact__icons {
-      width: 50%;
-      margin: 22px 0;
+      width: 150px;
+      margin: 1.5rem 0;
       display: flex;
       justify-content: space-between;
     }
 
     .contact__session {
-      margin: 2em 0;
+      margin: 2rem 0;
       color: $color-tertiary;
     }
   }

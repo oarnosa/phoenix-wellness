@@ -2,14 +2,15 @@
 
 .plan {
   width: 80vw;
+  max-width: 350px;
+  margin: 2rem auto;
   border: $color-secondary 5px solid;
   background-color: white;
-  margin: 35px auto;
 
   &__icon {
-    margin: 25px 0 0;
     width: 25%;
     max-width: 150px;
+    margin: 1.5rem 0 0;
   }
 
   &__title {
@@ -18,25 +19,25 @@
 
   &__price {
     color: $color-primary;
-    font-size: 42px;
+    font-size: 2.5rem;
   }
 
   &__hour {
     font-family: Oswald;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   &__list {
     width: 75%;
     text-align: left;
     color: $color-secondary;
-    font-size: 15px;
-    padding-left: 20px;
+    font-size: 1rem;
+    padding-left: 1.5rem;
     margin: auto;
     list-style: none;
 
     > li {
-      line-height: 1.5em;
+      line-height: 1.5rem;
 
       strong {
         color: $color-tertiary;
@@ -46,16 +47,16 @@
         content: "✓";
         color: $color-tertiary;
         display: inline-block;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 700;
-        text-indent: -1.5em;
+        text-indent: -1.5rem;
       }
     }
   }
 
   &__book {
     color: $color-tertiary;
-    margin: 2em 0;
+    margin: 2.5rem 0;
   }
 
   &--special {
@@ -63,10 +64,8 @@
   }
 
   &--deal {
-    width: 100%;
     margin: 0;
-    padding: 10px 0;
+    padding: 0.75rem 0;
     background-color: $color-tertiary;
-    justify-self: top;
   }
 }

@@ -1,21 +1,19 @@
 @import "../../assets/styles/main.scss";
 
 .review {
-  padding: 1em 0;
-  line-height: 1.5em;
+  padding: 1rem 0;
 
   &__stars {
     color: $color-tertiary;
   }
 
-  &__author {
-    &-name {
-      color: $color-tertiary;
-      margin: 0;
-    }
-    &-title {
-      margin: 0;
-    }
+  &__author-name {
+    color: $color-tertiary;
+    margin: 0;
+  }
+
+  &__author-title {
+    margin: 0;
   }
 
   &--inverted {
