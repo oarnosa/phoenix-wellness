@@ -29,19 +29,35 @@ const Home = () => {
               className="landing__icon"
               icon={["fab", "facebook"]}
               size="2x"
+              onClick={() => window.open("https://www.facebook.com/")}
             />
             <FontAwesomeIcon
               className="landing__icon"
               icon={["fab", "instagram"]}
               size="2x"
+              onClick={() =>
+                window.open("https://www.instagram.com/phxrecover")
+              }
             />
             <FontAwesomeIcon
               className="landing__icon"
               icon={["fab", "linkedin-in"]}
               size="2x"
+              onClick={() =>
+                window.open("https://www.linkedin.com/company/phxrecover")
+              }
             />
           </div>
-          <h3 className="landing__session">BOOK A SESSION</h3>
+          <h3
+            className="landing__session"
+            onClick={() =>
+              window.open(
+                "https://squareup.com/appointments/book/wwpdaytyi5m5wg/LF1SNP6G13F24/services"
+              )
+            }
+          >
+            BOOK A SESSION
+          </h3>
         </div>
       </section>
       <section className="home__mission">
@@ -147,49 +163,65 @@ const Home = () => {
       </section>
       <section className="home__contact">
         <div className="contact__content">
-          <div className="contact__headline">
-            <h3 className="contact__headline-tag">OUR INFO</h3>
-            <h2 className="contact__headline-phrase">CONTACT US.</h2>
-          </div>
           <div className="contact__section">
+            <div className="contact__headline">
+              <h3 className="contact__headline-tag">OUR INFO</h3>
+              <h2 className="contact__headline-phrase">CONTACT US.</h2>
+            </div>
             <p className="contact__statement">
               Your convenience is our top priority. At Phoenix we bring our
               service and equipment to you whether it is at home, work, or
               anywhere else at a time most convenient to you. Reach out to us
               via phone, email, or social media and book a session today.
             </p>
-            <div className="contact__info">
-              <div className="contact__phone">
-                <h5>PHONE</h5>
-                <h5>(786) 302 6104</h5>
-              </div>
-              <div className="contact__email">
-                <h5>EMAIL</h5>
-                <h5>PHXRECOVER@GMAIL.COM</h5>
-              </div>
-              <div className="contact__socials">
+          </div>
+          <div className="contact__info">
+            <div className="contact__phone">
+              <h5>PHONE</h5>
+              <h5>(786) 302 6104</h5>
+            </div>
+            <div className="contact__email">
+              <h5>EMAIL</h5>
+              <h5>PHXRECOVER@GMAIL.COM</h5>
+            </div>
+            <div className="contact__socials">
+              <div className="contact__icons">
                 <h5>SOCIALS</h5>
-                <div className="contact__icons">
-                  <FontAwesomeIcon
-                    className="contact__icon"
-                    icon={["fab", "facebook"]}
-                    size="lg"
-                  />
-                  <FontAwesomeIcon
-                    className="contact__icon"
-                    icon={["fab", "instagram"]}
-                    size="lg"
-                  />
-                  <FontAwesomeIcon
-                    className="contact__icon"
-                    icon={["fab", "linkedin-in"]}
-                    size="lg"
-                  />
-                </div>
+                <FontAwesomeIcon
+                  className="contact__icon"
+                  icon={["fab", "facebook"]}
+                  size="lg"
+                  onClick={() => window.open("https://www.facebook.com/")}
+                />
+                <FontAwesomeIcon
+                  className="contact__icon"
+                  icon={["fab", "instagram"]}
+                  size="lg"
+                  onClick={() =>
+                    window.open("https://www.instagram.com/phxrecover")
+                  }
+                />
+                <FontAwesomeIcon
+                  className="contact__icon"
+                  icon={["fab", "linkedin-in"]}
+                  size="lg"
+                  onClick={() =>
+                    window.open("https://www.linkedin.com/company/phxrecover")
+                  }
+                />
               </div>
             </div>
           </div>
-          <h3 className="contact__session">BOOK A SESSION</h3>
+          <h3
+            className="contact__session"
+            onClick={() =>
+              window.open(
+                "https://squareup.com/appointments/book/wwpdaytyi5m5wg/LF1SNP6G13F24/services"
+              )
+            }
+          >
+            BOOK A SESSION
+          </h3>
         </div>
       </section>
       <Footer />

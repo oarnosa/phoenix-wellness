@@ -13,7 +13,16 @@ const Plan = ({ special, icon, name, price, time, children }) => (
         <span className="plan__hour">{` / ${time} min`}</span>
       </h1>
       <ul className="plan__list">{children}</ul>
-      <h4 className="plan__book">BOOK NOW</h4>
+      <h3
+        className="plan__book"
+        onClick={() =>
+          window.open(
+            "https://squareup.com/appointments/book/wwpdaytyi5m5wg/LF1SNP6G13F24/services"
+          )
+        }
+      >
+        BOOK NOW
+      </h3>
     </div>
   </div>
 );

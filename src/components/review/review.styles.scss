@@ -13,18 +13,12 @@
   }
 
   &__comment {
-    margin: 0.5em 0 1em;
+    margin: 0 0 0.5em;
   }
 
   &__author {
-    &-name {
-      color: $color-tertiary;
-      margin: 0;
-    }
-
-    &-title {
-      margin: 0;
-    }
+    color: $color-tertiary;
+    margin: 0;
   }
 
   &--inverted {
