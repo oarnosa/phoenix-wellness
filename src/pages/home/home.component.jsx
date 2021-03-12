@@ -41,9 +41,7 @@ const Home = () => {
               size="2x"
             />
           </div>
-          <div className="landing__session">
-            <h3>BOOK A SESSION</h3>
-          </div>
+          <h3 className="landing__session">BOOK A SESSION</h3>
         </div>
       </section>
       <section className="home__mission">
@@ -87,9 +85,7 @@ const Home = () => {
               price="$50"
               time="60"
             >
-              <li>
-                Manual treatment with focus on <strong>2</strong> problem areas
-              </li>
+              <li>Manual treatment with focus on 2 problem areas</li>
               <li>Performance stretching</li>
               <li>Trigger point treatment</li>
               <li>Percussion drill massage</li>
@@ -102,9 +98,7 @@ const Home = () => {
               price="$75"
               time="90"
             >
-              <li>
-                Manual treatment with focus on <strong>3</strong> problem areas
-              </li>
+              <li>Manual treatment with focus on 3 problem areas</li>
               <li>Performance stretching</li>
               <li>Trigger point treatment</li>
               <li>Percussion drill massage</li>
@@ -118,9 +112,7 @@ const Home = () => {
               price="$100"
               time="120"
             >
-              <li>
-                Manual treatment with focus on <strong>4</strong> problem areas
-              </li>
+              <li>Manual treatment with focus on 4 problem areas</li>
               <li>Performance stretching</li>
               <li>Trigger point treatment</li>
               <li>Percussion drill massage</li>
@@ -159,37 +151,41 @@ const Home = () => {
             <h3 className="contact__headline-tag">OUR INFO</h3>
             <h2 className="contact__headline-phrase">CONTACT US.</h2>
           </div>
-          <p className="contact__statement">
-            Your convenience is our top priority. At Phoenix we make scheduling
-            easy and go to you at a time that works best for you.
-          </p>
-          <div className="contact__info">
-            <div className="contact__phone">
-              <h5>PHONE</h5>
-              <h5>(786) 302 6104</h5>
-            </div>
-            <div className="contact__email">
-              <h5>EMAIL</h5>
-              <h5>PHXRECOVER@GMAIL.COM</h5>
-            </div>
-            <div className="contact__socials">
-              <h5>SOCIALS</h5>
-              <div className="contact__icons">
-                <FontAwesomeIcon
-                  className="contact__icon"
-                  icon={["fab", "facebook"]}
-                  size="lg"
-                />
-                <FontAwesomeIcon
-                  className="contact__icon"
-                  icon={["fab", "instagram"]}
-                  size="lg"
-                />
-                <FontAwesomeIcon
-                  className="contact__icon"
-                  icon={["fab", "linkedin-in"]}
-                  size="lg"
-                />
+          <div className="contact__section">
+            <p className="contact__statement">
+              Your convenience is our top priority. At Phoenix we bring our
+              service and equipment to you whether it is at home, work, or
+              anywhere else at a time most convenient to you. Reach out to us
+              via phone, email, or social media and book a session today.
+            </p>
+            <div className="contact__info">
+              <div className="contact__phone">
+                <h5>PHONE</h5>
+                <h5>(786) 302 6104</h5>
+              </div>
+              <div className="contact__email">
+                <h5>EMAIL</h5>
+                <h5>PHXRECOVER@GMAIL.COM</h5>
+              </div>
+              <div className="contact__socials">
+                <h5>SOCIALS</h5>
+                <div className="contact__icons">
+                  <FontAwesomeIcon
+                    className="contact__icon"
+                    icon={["fab", "facebook"]}
+                    size="lg"
+                  />
+                  <FontAwesomeIcon
+                    className="contact__icon"
+                    icon={["fab", "instagram"]}
+                    size="lg"
+                  />
+                  <FontAwesomeIcon
+                    className="contact__icon"
+                    icon={["fab", "linkedin-in"]}
+                    size="lg"
+                  />
+                </div>
               </div>
             </div>
           </div>

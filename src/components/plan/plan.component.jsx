@@ -13,7 +13,7 @@ const Plan = ({ special, icon, name, price, time, children }) => (
         <span className="plan__hour">{` / ${time} min`}</span>
       </h1>
       <ul className="plan__list">{children}</ul>
-      <h3 className="plan__book">BOOK NOW</h3>
+      <h4 className="plan__book">BOOK NOW</h4>
     </div>
   </div>
 );

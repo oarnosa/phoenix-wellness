@@ -10,7 +10,7 @@ const REVIEWS_DATA = [
     {
         id: 2,
         title: "LEFT FEELING LIKE A NEW PERSON",
-        comment: "“I bought the Gold Treatment and it was amazing. I felt refreshed after the session. Definitely worth the money.”",
+        comment: "“I bought the Gold Treatment after seeing so many Instagram posts about the benefits of cupping therapy. After the session I felt completely refreshed and was extremely happy with the results. Definitely worth the money.”",
         stars: 5,
         author: "EMILY J. QUINN",
         source: "INSTAGRAM"

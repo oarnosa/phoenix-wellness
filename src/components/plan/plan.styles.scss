@@ -1,16 +1,18 @@
 @import "../../assets/styles/main.scss";
 
 .plan {
-  width: 80vw;
-  max-width: 350px;
-  margin: 2rem auto;
+  margin: 1em 0;
   border: $color-secondary 5px solid;
   background-color: white;
+
+  @media (min-width: $breakpoint-laptop) {
+    margin: 1em 0.5em;
+  }
 
   &__icon {
     width: 25%;
     max-width: 150px;
-    margin: 1.5rem 0 0;
+    margin: 1.5em 0 0;
   }
 
   &__title {
@@ -19,44 +21,40 @@
 
   &__price {
     color: $color-primary;
-    font-size: 2.5rem;
+    margin: 0 0 0.5em;
   }
 
   &__hour {
-    font-family: Oswald;
-    font-size: 1rem;
+    font-family: $font-primary;
+    letter-spacing: 0.25rem;
   }
 
   &__list {
-    width: 75%;
+    width: 80%;
     text-align: left;
     color: $color-secondary;
-    font-size: 1rem;
-    padding-left: 1.5rem;
+    padding-left: 1.5em;
     margin: auto;
     list-style: none;
 
     > li {
-      line-height: 1.5rem;
-
-      strong {
-        color: $color-tertiary;
-      }
+      line-height: 1.5em;
 
       &::before {
         content: "✓";
         color: $color-tertiary;
         display: inline-block;
-        font-size: 1rem;
         font-weight: 700;
-        text-indent: -1.5rem;
+        text-indent: -1.5em;
       }
     }
   }
 
   &__book {
+    cursor: pointer;
+    width: fit-content;
     color: $color-tertiary;
-    margin: 2.5rem 0;
+    margin: 1.25em auto;
   }
 
   &--special {
@@ -65,7 +63,6 @@
 
   &--deal {
     margin: 0;
-    padding: 0.75rem 0;
     background-color: $color-tertiary;
   }
 }

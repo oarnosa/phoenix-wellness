@@ -3,11 +3,16 @@
 .nav {
   height: 10vh;
   @include center;
+  background-color: $color-primary;
 
   &__content {
-    width: 82.5%;
+    width: 85%;
     max-width: 500px;
     display: flex;
     justify-content: space-between;
+  }
+
+  &__link {
+    @include underline;
   }
 }

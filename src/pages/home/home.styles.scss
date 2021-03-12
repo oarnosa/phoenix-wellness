@@ -2,24 +2,32 @@
 
 .home {
   color: white;
-  background-color: $color-primary;
   overflow: hidden;
 
   &__landing {
-    height: 80vh;
+    height: 90vh;
     @include center;
     text-align: center;
     background-color: $color-primary;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+
+    @media (min-width: $breakpoint-desktop) {
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    }
 
     .landing__content {
-      width: 82.5%;
+      width: 80%;
       max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .landing__socials {
+      width: 100%;
       display: flex;
       justify-content: space-evenly;
-      padding: 1rem 0;
+      padding: 1em 0;
     }
 
     .landing__icon {
@@ -28,104 +36,170 @@
 
     .landing__brand {
       &-emblem {
-        padding-top: 1.5rem;
+        padding-top: 1.5em;
       }
 
       &-name {
-        padding: 1.5rem 0;
+        padding: 1.5em 0;
       }
     }
 
     .landing__session {
       color: $color-tertiary;
+      @include underline;
     }
   }
 
   &__mission {
     @include center;
-    padding: 15vh 0 1.5rem;
+    padding: 2.5em 0;
     color: $color-primary;
     background-color: white;
-    clip-path: polygon(50% 10vh, 100% 0, 100% 100%, 0 100%, 0 0);
 
     .mission__content {
-      width: 82.5%;
+      width: 85%;
+      max-width: 1150px;
     }
 
-    .mission__headline {
-      &-tag {
-        color: $color-tertiary;
-      }
+    .mission__headline-tag {
+      color: $color-tertiary;
+      margin-bottom: 0;
     }
 
-    .mission__image {
-      padding: 1.5rem 0;
+    .mission__headline-phrase {
+      margin-top: 0;
     }
 
     .mission__statement {
-      line-height: 1.5rem;
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: $breakpoint-laptop) {
+        display: grid;
+        grid-template-columns: 40% auto;
+        grid-template-rows: 50% auto;
+
+        p:first-of-type {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+      }
     }
   }
 
   &__plans {
     @include center;
-    padding: 1.5rem 0;
+    padding: 1.75em 0 3.5em;
+    background-color: $color-primary;
 
     .plans__content {
-      width: 82.5%;
+      width: 85%;
+      max-width: 1150px;
       text-align: center;
+    }
+
+    .plans__offers {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media (min-width: $breakpoint-laptop) {
+        flex-direction: row;
+        align-items: initial;
+        justify-content: space-between;
+      }
     }
   }
 
   &__reviews {
     @include center;
-    padding: 1.5rem 0;
+    padding: 2.5em 0;
     color: $color-primary;
     background-color: white;
 
     .reviews__content {
-      width: 82.5%;
+      width: 85%;
+      max-width: 1150px;
     }
 
-    .reviews__headline {
-      &-tag {
-        color: $color-tertiary;
+    .reviews__headline-tag {
+      color: $color-tertiary;
+      margin-bottom: 0;
+    }
+
+    .reviews__headline-phrase {
+      margin-top: 0;
+    }
+
+    .reviews__testimonials {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 1em;
+
+      .review--inverted {
+        align-self: flex-end;
       }
     }
   }
 
   &__contact {
     @include center;
-    padding: 1.5rem 0;
+    padding: 2.5em 0;
+    background-color: $color-primary;
 
     .contact__content {
-      width: 82.5%;
+      width: 85%;
+      max-width: 1150px;
+
+      @media (min-width: $breakpoint-laptop) {
+        text-align: center;
+      }
 
       div > h5:first-of-type {
         color: $color-tertiary;
+        margin-bottom: 0;
+      }
+
+      div > h5:last-child {
+        margin-top: 0;
       }
     }
 
-    .contact__headline {
-      &-tag {
-        color: $color-tertiary;
-      }
+    .contact__headline-tag {
+      color: $color-tertiary;
+      margin-bottom: 0;
+    }
+
+    .contact__headline-phrase {
+      margin-top: 0;
     }
 
     .contact__statement {
-      padding: 1rem 0;
+      max-width: 750px;
+
+      @media (min-width: $breakpoint-laptop) {
+        margin: auto;
+      }
     }
 
-    .contact__icons {
-      width: 150px;
-      margin: 1.5rem 0;
-      display: flex;
-      justify-content: space-between;
+    .contact__icon {
+      cursor: pointer;
+      font-size: 1.6em;
+      margin: 0.5em 2em 0 0;
+
+      @media (min-width: $breakpoint-laptop) {
+        font-size: 1.8em;
+        margin: 0.5em 1.5em;
+      }
     }
 
     .contact__session {
-      margin: 2rem 0;
+      margin: 2em auto;
       color: $color-tertiary;
+      @include underline;
     }
   }
 }
