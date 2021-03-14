@@ -17,7 +17,7 @@ const Plan = ({ special, icon, name, price, time, children }) => (
         className="plan__book"
         onClick={() =>
           window.open(
-            "https://squareup.com/appointments/book/wwpdaytyi5m5wg/LF1SNP6G13F24/services"
+            "https://square.site/book/LF1SNP6G13F24/phoenix-wellness-recovery-miami-fl"
           )
         }
       >

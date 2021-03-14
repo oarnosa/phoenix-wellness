@@ -52,7 +52,7 @@ const Home = () => {
             className="landing__session"
             onClick={() =>
               window.open(
-                "https://squareup.com/appointments/book/wwpdaytyi5m5wg/LF1SNP6G13F24/services"
+                "https://square.site/book/LF1SNP6G13F24/phoenix-wellness-recovery-miami-fl"
               )
             }
           >
@@ -250,7 +250,7 @@ const Home = () => {
             className="contact__session"
             onClick={() =>
               window.open(
-                "https://squareup.com/appointments/book/wwpdaytyi5m5wg/LF1SNP6G13F24/services"
+                "https://square.site/book/LF1SNP6G13F24/phoenix-wellness-recovery-miami-fl"
               )
             }
           >
