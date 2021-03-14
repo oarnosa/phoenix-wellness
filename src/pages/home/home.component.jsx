@@ -209,7 +209,12 @@ const Home = () => {
               <h5>PHONE</h5>
               <h5>(786) 302 6104</h5>
             </div>
-            <div className="contact__email">
+            <div
+              className="contact__email"
+              onClick={() =>
+                (window.location.href = "mailto:phxrecover@gmail.com")
+              }
+            >
               <h5>EMAIL</h5>
               <h5>PHXRECOVER@GMAIL.COM</h5>
             </div>

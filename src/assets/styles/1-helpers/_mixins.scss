@@ -28,3 +28,11 @@
     transform: scaleX(1);
   }
 }
+
+@mixin link {
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.65;
+  }
+}

@@ -5,7 +5,7 @@
   overflow: hidden;
 
   &__landing {
-    height: 90vh;
+    min-height: 90vh;
     @include center;
     text-align: center;
     background-color: $color-primary;
@@ -32,9 +32,12 @@
 
     .landing__icon {
       cursor: pointer;
+      @include link;
     }
 
     .landing__brand {
+      height: 100%;
+
       &-emblem {
         padding-top: 1.5em;
       }
@@ -61,13 +64,15 @@
       max-width: 1150px;
     }
 
-    .mission__headline-tag {
-      color: $color-tertiary;
-      margin-bottom: 0;
-    }
+    .mission__headline {
+      &-tag {
+        color: $color-tertiary;
+        margin-bottom: 0;
+      }
 
-    .mission__headline-phrase {
-      margin-top: 0;
+      &-phrase {
+        margin-top: 0;
+      }
     }
 
     .mission__statement {
@@ -192,13 +197,15 @@
       max-width: 1150px;
     }
 
-    .reviews__headline-tag {
-      color: $color-tertiary;
-      margin-bottom: 0;
-    }
+    .reviews__headline {
+      &-tag {
+        color: $color-tertiary;
+        margin-bottom: 0;
+      }
 
-    .reviews__headline-phrase {
-      margin-top: 0;
+      &-phrase {
+        margin-top: 0;
+      }
     }
 
     .reviews__testimonials {
@@ -267,10 +274,16 @@
       }
     }
 
+    .contact__email > h5:last-of-type {
+      cursor: pointer;
+      @include link;
+    }
+
     .contact__icon {
       cursor: pointer;
       font-size: 1.6em;
       margin: 0.25em 2em 0 0;
+      @include link;
 
       @media (min-width: $breakpoint-laptop) {
         font-size: 1.8em;
