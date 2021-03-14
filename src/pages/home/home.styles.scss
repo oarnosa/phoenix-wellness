@@ -159,7 +159,7 @@
 
   &__plans {
     @include center;
-    padding: 1.75em 0 3.5em;
+    padding: 2.5em 0 3.5em;
     background-color: $color-primary;
 
     .plans__content {
@@ -183,7 +183,7 @@
 
   &__reviews {
     @include center;
-    padding: 2.5em 0;
+    padding: 2.5em 0 3.5em;
     color: $color-primary;
     background-color: white;
 

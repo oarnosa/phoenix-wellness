@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div className="home">
       <Nav />
-      <section className="home__landing">
+      <section className="home__landing" id="landing">
         <div className="landing__content">
           <div className="landing__brand">
             <LogoEmblem className="landing__brand-emblem" />
@@ -60,7 +60,7 @@ const Home = () => {
           </h3>
         </div>
       </section>
-      <section className="home__mission">
+      <section className="home__mission" id="mission">
         <div className="mission__content">
           <div className="mission__headline">
             <h3 className="mission__headline-tag">OUR MANTRA</h3>
@@ -95,7 +95,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="home__gallery">
+      <section className="home__gallery" id="gallery">
         <div className="gallery__content">
           <div className="gallery__image--container">
             <img
@@ -120,7 +120,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="home__plans">
+      <section className="home__plans" id="plans">
         <div className="plans__content">
           <h2 className="plans__headline">OUR PLANS</h2>
           <div className="plans__offers">
@@ -171,7 +171,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="home__reviews">
+      <section className="home__reviews" id="reviews">
         <div className="reviews__content">
           <div className="reviews__headline">
             <h3 className="reviews__headline-tag">OUR CUSTOMERS</h3>
@@ -190,7 +190,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="home__contact">
+      <section className="home__contact" id="contact">
         <div className="contact__content">
           <div className="contact__section">
             <div className="contact__headline">
