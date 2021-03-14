@@ -18,7 +18,7 @@ const REVIEWS_DATA = [
         title: "WONDERFUL EXPERIENCE",
         comment: "“My lower back and neck were very tense. I stated those as my two points of focus on the steel plan and felt great after the treatment. I would 100% recommend it.”",
         stars: 5,
-        author: "PABLO A.",
+        author: "PABLO ARENCIBIA",
     },
 ];
 

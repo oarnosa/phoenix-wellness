@@ -75,8 +75,12 @@ const Home = () => {
               to allow optimal functionality in sports, weightlifting or just
               everyday life.
             </p>
-            <div className="mission__image">
-              <img src="https://via.placeholder.com/305x200" alt="mission" />
+            <div className="mission__image--container">
+              <img
+                className="mission__image"
+                src="https://i.ibb.co/LRcYyQp/profile.jpg"
+                alt="profile"
+              />
             </div>
             <p>
               I am a professional with a Masters degree in occupational therapy,
@@ -88,6 +92,31 @@ const Home = () => {
               possible, to get you back to doing what you love as quickly as
               possible.
             </p>
+          </div>
+        </div>
+      </section>
+      <section className="home__gallery">
+        <div className="gallery__content">
+          <div className="gallery__image--container">
+            <img
+              className="gallery__image"
+              src="https://i.ibb.co/8Kvh1m8/gallery-1.jpg"
+              alt="drill"
+            />
+          </div>
+          <div className="gallery__image--container">
+            <img
+              className="gallery__image"
+              src="https://i.ibb.co/0QtYBqj/gallery-2.jpg"
+              alt="TENS"
+            />
+          </div>
+          <div className="gallery__image--container">
+            <img
+              className="gallery__image"
+              src="https://i.ibb.co/DD5HWWG/gallery-3.jpg"
+              alt="cupping"
+            />
           </div>
         </div>
       </section>
@@ -109,7 +138,7 @@ const Home = () => {
             </Plan>
             <Plan
               special
-              icon="https://svgur.com/i/Uig.svg"
+              icon="http://svgur.com/i/V1U.svg"
               name="GOLD"
               price="$75"
               time="90"
