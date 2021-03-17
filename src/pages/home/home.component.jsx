@@ -138,7 +138,7 @@ const Home = () => {
             </Plan>
             <Plan
               special
-              icon="http://svgur.com/i/V1U.svg"
+              icon="https://svgur.com/i/V1U.svg"
               name="GOLD"
               price="$75"
               time="90"
