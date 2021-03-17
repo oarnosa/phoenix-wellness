@@ -78,7 +78,7 @@ const Home = () => {
             <div className="mission__image--container">
               <img
                 className="mission__image"
-                src="https://i.ibb.co/sFT4tDV/profile.jpg"
+                src="https://i.ibb.co/tcpCZ9Q/profile.jpg"
                 alt="profile"
               />
             </div>
@@ -100,21 +100,21 @@ const Home = () => {
           <div className="gallery__image--container">
             <img
               className="gallery__image"
-              src="https://i.ibb.co/nLntvMR/gallery-1.jpg"
+              src="https://i.ibb.co/YtbRK15/gallery-1.jpg"
               alt="Percussion Drill"
             />
           </div>
           <div className="gallery__image--container">
             <img
               className="gallery__image"
-              src="https://i.ibb.co/PWk3SNx/gallery-2.jpg"
+              src="https://i.ibb.co/DVpRy9Q/gallery-2.jpg"
               alt="TENS"
             />
           </div>
           <div className="gallery__image--container">
             <img
               className="gallery__image"
-              src="https://i.ibb.co/Y01SqMH/gallery-3.jpg"
+              src="https://i.ibb.co/BzXKbkd/gallery-3.jpg"
               alt="Cupping"
             />
           </div>
