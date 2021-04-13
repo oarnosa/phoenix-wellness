@@ -127,7 +127,7 @@ const Home = () => {
             <Plan
               icon="https://svgur.com/i/UkH.svg"
               name="STEEL"
-              price="$80"
+              price="$130"
               time="60"
             >
               <li>Manual treatment with focus on 2 problem areas</li>
@@ -140,7 +140,7 @@ const Home = () => {
               special
               icon="https://svgur.com/i/V1U.svg"
               name="GOLD"
-              price="$100"
+              price="$150"
               time="90"
             >
               <li>Manual treatment with focus on 3 problem areas</li>
@@ -154,7 +154,7 @@ const Home = () => {
             <Plan
               icon="https://svgur.com/i/Ujt.svg"
               name="OBSIDIAN"
-              price="$125"
+              price="$180"
               time="120"
             >
               <li>Manual treatment with focus on 4 problem areas</li>
@@ -166,7 +166,6 @@ const Home = () => {
               <li>Transcutaneous Electrical Nerve Stimulation (TENS Unit)</li>
               <li>Deep friction massage</li>
               <li>Corrective ergonomic education</li>
-              <li>Phoenix merchandise (Shirt)</li>
             </Plan>
           </div>
         </div>
