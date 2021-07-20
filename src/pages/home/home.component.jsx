@@ -127,7 +127,7 @@ const Home = () => {
             <Plan
               icon="https://svgur.com/i/UkH.svg"
               name="STEEL"
-              price="$130"
+              price="$110"
               time="60"
             >
               <li>Manual treatment with focus on 2 problem areas</li>
@@ -140,7 +140,7 @@ const Home = () => {
               special
               icon="https://svgur.com/i/V1U.svg"
               name="GOLD"
-              price="$150"
+              price="$140"
               time="90"
             >
               <li>Manual treatment with focus on 3 problem areas</li>
