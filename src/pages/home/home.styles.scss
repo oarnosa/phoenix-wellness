@@ -1,4 +1,4 @@
-@import "../../assets/styles/main";
+@import '../../assets/styles/main';
 
 .home {
   color: white;
@@ -165,7 +165,7 @@
 
   &__plans {
     @include center;
-    padding: 2.5em 0;
+    padding: 2.5em 0 5em 0;
     background-color: $color-primary;
 
     .plans__content {
@@ -178,11 +178,24 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-bottom: 2.5em;
 
       @media (min-width: $breakpoint-laptop) {
         flex-direction: row;
         align-items: initial;
         justify-content: space-between;
+      }
+    }
+
+    .plans__treatments {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media (min-width: $breakpoint-laptop) {
+        flex-direction: row;
+        align-items: initial;
+        justify-content: space-around;
       }
     }
   }

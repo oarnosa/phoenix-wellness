@@ -1,0 +1,35 @@
+@import '../../assets/styles/main.scss';
+
+.treatment {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1em 0;
+
+  @media (min-width: $breakpoint-laptop) {
+    margin: 0 0.5em 1em;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    color: $color-tertiary;
+  }
+
+  &__showcase {
+    height: fit-content;
+    border: $color-secondary 5px solid;
+
+    img {
+      width: 100%;
+    }
+  }
+}

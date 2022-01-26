@@ -1,6 +1,6 @@
 // Modify global shared styles
 // Import Google Fonts
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Oswald&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Oswald&display=swap');
 
 // Typography for all elements
 :root {
@@ -70,6 +70,6 @@ span {
 li {
   font-family: $font-secondary;
   font-size: 1.5rem;
-  line-height: 2;
-  margin-bottom: 0.7em;
+  line-height: 1.5;
+  margin-bottom: 0.5em;
 }

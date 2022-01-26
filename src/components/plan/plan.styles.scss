@@ -1,6 +1,9 @@
-@import "../../assets/styles/main.scss";
+@import '../../assets/styles/main.scss';
 
 .plan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 350px;
   margin: 1em 0;
@@ -20,13 +23,13 @@
   }
 
   &__icon {
-    height: 100%;
-    width: 25%;
-    max-width: 100px;
+    width: 100%;
+    max-width: 125px;
     margin: 1.5em 0 0;
   }
 
   &__title {
+    margin: 0.5em 0 0 0;
     color: $color-tertiary;
   }
 
@@ -35,7 +38,7 @@
     margin: 0 0 0.5em;
   }
 
-  &__hour {
+  &__time {
     font-family: $font-primary;
     letter-spacing: 0.25rem;
   }
@@ -44,34 +47,53 @@
     width: 80%;
     text-align: left;
     color: $color-secondary;
-    padding-left: 1.5em;
-    margin: auto;
     list-style: none;
 
-    > li {
-      line-height: 1.5em;
+    &-sub {
+      list-style: none;
 
-      &::before {
-        content: "✓";
-        color: $color-tertiary;
-        display: inline-block;
-        font-weight: 700;
-        text-indent: -1.5em;
+      > li {
+        &::before {
+          content: '✓';
+          color: $color-tertiary;
+          display: inline-block;
+          font-weight: 700;
+          text-indent: -1.5em;
+        }
       }
     }
+  }
+
+  &__center {
+    text-align: center;
+    color: $color-tertiary;
+    margin: 0;
+    padding: 0.25em 1.5em 0.25em 0;
   }
 
   &__book {
     cursor: pointer;
     width: fit-content;
     color: $color-tertiary;
-    margin: 1.25em auto;
+    margin: auto auto 1.25em auto;
+    padding-top: 2.5rem;
     font-size: 2rem;
     @include link;
   }
 
+  &__single {
+    margin: 0;
+    padding: 0.25em 0;
+    font-size: 90%;
+    background-color: $color-secondary;
+  }
+
   &--special {
     border-color: $color-tertiary;
+
+    .plan__single {
+      background-color: $color-tertiary;
+    }
   }
 
   &--deal {

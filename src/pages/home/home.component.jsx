@@ -1,16 +1,17 @@
-import React, { useState } from "react";
-import { ReactComponent as LogoEmblem } from "../../assets/logo-emblem.svg";
-import { ReactComponent as LogoTextLight } from "../../assets/logo-text-light.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState } from 'react';
+import { ReactComponent as LogoEmblem } from '../../assets/logo-emblem.svg';
+import { ReactComponent as LogoTextLight } from '../../assets/logo-text-light.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Nav from "../../components/nav/nav.component";
-import Plan from "../../components/plan/plan.component";
-import Review from "../../components/review/review.component";
-import Footer from "../../components/footer/footer.component";
+import Nav from '../../components/nav/nav.component';
+import Plan from '../../components/plan/plan.component';
+import Review from '../../components/review/review.component';
+import Treatment from '../../components/treatment/treatment.component';
+import Footer from '../../components/footer/footer.component';
 
-import REVIEWS_DATA from "./reviews.data";
+import REVIEWS_DATA from './reviews.data';
 
-import "./home.styles.scss";
+import './home.styles.scss';
 
 const Home = () => {
   const [reviews] = useState(REVIEWS_DATA);
@@ -18,6 +19,7 @@ const Home = () => {
   return (
     <div className="home">
       <Nav />
+
       <section className="home__landing" id="landing">
         <div className="landing__content">
           <div className="landing__brand">
@@ -27,24 +29,24 @@ const Home = () => {
           <div className="landing__socials">
             <FontAwesomeIcon
               className="landing__icon"
-              icon={["fab", "facebook"]}
+              icon={['fab', 'facebook']}
               size="2x"
-              onClick={() => window.open("https://www.facebook.com/")}
+              onClick={() => window.open('https://www.facebook.com/')}
             />
             <FontAwesomeIcon
               className="landing__icon"
-              icon={["fab", "instagram"]}
+              icon={['fab', 'instagram']}
               size="2x"
               onClick={() =>
-                window.open("https://www.instagram.com/phxrecover")
+                window.open('https://www.instagram.com/phxrecover')
               }
             />
             <FontAwesomeIcon
               className="landing__icon"
-              icon={["fab", "linkedin-in"]}
+              icon={['fab', 'linkedin-in']}
               size="2x"
               onClick={() =>
-                window.open("https://www.linkedin.com/company/phxrecover")
+                window.open('https://www.linkedin.com/company/phxrecover')
               }
             />
           </div>
@@ -52,7 +54,7 @@ const Home = () => {
             className="landing__session"
             onClick={() =>
               window.open(
-                "https://square.site/book/LF1SNP6G13F24/phoenix-wellness-recovery-miami-fl"
+                'https://square.site/book/LF1SNP6G13F24/phoenix-wellness-recovery-miami-fl'
               )
             }
           >
@@ -60,6 +62,7 @@ const Home = () => {
           </h3>
         </div>
       </section>
+
       <section className="home__mission" id="mission">
         <div className="mission__content">
           <div className="mission__headline">
@@ -78,7 +81,7 @@ const Home = () => {
             <div className="mission__image--container">
               <img
                 className="mission__image"
-                src="https://i.ibb.co/tcpCZ9Q/profile.jpg"
+                src="/images/mission/profile.jpg"
                 alt="profile"
               />
             </div>
@@ -95,81 +98,147 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <section className="home__gallery" id="gallery">
         <div className="gallery__content">
           <div className="gallery__image--container">
             <img
               className="gallery__image"
-              src="https://i.ibb.co/YtbRK15/gallery-1.jpg"
+              src="/images/gallery/gallery-1.jpg"
               alt="Percussion Drill"
             />
           </div>
           <div className="gallery__image--container">
             <img
               className="gallery__image"
-              src="https://i.ibb.co/DVpRy9Q/gallery-2.jpg"
+              src="/images/gallery/gallery-2.jpg"
               alt="TENS"
             />
           </div>
           <div className="gallery__image--container">
             <img
               className="gallery__image"
-              src="https://i.ibb.co/BzXKbkd/gallery-3.jpg"
+              src="/images/gallery/gallery-3.jpg"
               alt="Cupping"
             />
           </div>
         </div>
       </section>
+
       <section className="home__plans" id="plans">
         <div className="plans__content">
-          <h2 className="plans__headline">OUR PLANS</h2>
+          <h3 className="plans__headline-tag">OUR PLANS</h3>
+          <h2 className="plans__headline">STANDARD TREATMENT</h2>
           <div className="plans__offers">
             <Plan
-              icon="https://svgur.com/i/UkH.svg"
+              icon="/images/plans/plan-steel.png"
               name="STEEL"
               price="$115"
+              priceMonthly="$140"
               time="60"
             >
-              <li>Manual treatment with focus on 2 problem areas</li>
-              <li>Performance stretching</li>
-              <li>Trigger point treatment</li>
-              <li>Percussion drill massage</li>
-              <li>Instrument Assisted Soft Tissue Mobilization (IASTM)</li>
+              <li>
+                Schedule <b>2</b> one hour sessions anywhere, anytime including:
+              </li>
+              <ul className="plan__list-sub">
+                <li>Manual treatment with focus on 2 problem areas</li>
+                <li>Active Assitive Range of Motion stretching</li>
+                <li>Trigger point treatment</li>
+                <li>Percussion drill massage</li>
+                <li>Instrument Assisted Soft Tissue Mobilization (IASTM)</li>
+              </ul>
+              <p className="plan__center">AND</p>
+              <li>
+                Select <b>1</b> specialized service including:
+              </li>
+              <ul className="plan__list-sub">
+                <li>
+                  Pneumatic compression device (Arm, Legs, Hip Lower back)
+                </li>
+                <li>Temperature contrast technology/modalities</li>
+              </ul>
             </Plan>
             <Plan
               special
-              icon="https://svgur.com/i/V1U.svg"
+              icon="/images/plans/plan-gold.png"
               name="GOLD"
               price="$135"
+              priceMonthly="$170"
               time="90"
             >
-              <li>Manual treatment with focus on 3 problem areas</li>
-              <li>Performance stretching</li>
-              <li>Trigger point treatment</li>
-              <li>Percussion drill massage</li>
-              <li>Instrument Assisted Soft Tissue Mobilization (IASTM)</li>
-              <li>Cupping therapy</li>
-              <li>Transcutaneous Electrical Nerve Stimulation (TENS Unit)</li>
+              <li>
+                Schedule <b>3</b> one hour sessions anywhere, anytime including:
+              </li>
+              <ul className="plan__list-sub">
+                <li>Manual treatment with focus on 2 problem areas</li>
+                <li>Active Assitive Range of Motion stretching</li>
+                <li>Trigger point treatment</li>
+                <li>Percussion drill massage</li>
+                <li>Instrument Assisted Soft Tissue Mobilization (IASTM)</li>
+              </ul>
+              <p className="plan__center">AND</p>
+              <li>
+                Select <b>1</b> specialized service including:
+              </li>
+              <ul className="plan__list-sub">
+                <li>
+                  Pneumatic compression device (Arm, Legs, Hip Lower back)
+                </li>
+                <li>Temperature contrast technology/modalities</li>
+              </ul>
             </Plan>
             <Plan
-              icon="https://svgur.com/i/Ujt.svg"
+              icon="/images/plans/plan-obsidian.png"
               name="OBSIDIAN"
               price="$170"
+              priceMonthly="$210"
               time="120"
             >
-              <li>Manual treatment with focus on 4 problem areas</li>
-              <li>Performance stretching</li>
-              <li>Trigger point treatment</li>
-              <li>Percussion drill massage</li>
-              <li>Instrument Assisted Soft Tissue Mobilization (IASTM)</li>
-              <li>Cupping therapy</li>
-              <li>Transcutaneous Electrical Nerve Stimulation (TENS Unit)</li>
-              <li>Deep friction massage</li>
-              <li>Corrective ergonomic education</li>
+              <li>
+                Schedule <b>4</b> one hour sessions anywhere, anytime including:
+              </li>
+              <ul className="plan__list-sub">
+                <li>Manual treatment with focus on 2 problem areas</li>
+                <li>Active Assitive Range of Motion (AAROM) stretching</li>
+                <li>Trigger point treatment</li>
+                <li>Percussion drill massage</li>
+                <li>Instrument Assisted Soft Tissue Mobilization (IASTM)</li>
+              </ul>
+              <p className="plan__center">AND</p>
+              <li>
+                Select <b>2</b> specialized services including:
+              </li>
+              <ul className="plan__list-sub">
+                <li>
+                  Pneumatic compression device (Arm, Legs, Hip Lower back)
+                </li>
+                <li>Temperature contrast technology/modalities</li>
+              </ul>
             </Plan>
+          </div>
+          <h2 className="plans__headline">SPECIALIZED TREATMENT</h2>
+          <div className="plans__treatments">
+            <Treatment
+              title="PNEUMATIC COMPRESSION"
+              images={[
+                '/images/plans/compress_1.jpg',
+                '/images/plans/compress_2.jpg',
+                '/images/plans/compress_3.jpg',
+              ]}
+            ></Treatment>
+            <Treatment
+              title="TEMPERATURE CONTRAST"
+              images={[
+                '/images/plans/heat_1.jpg',
+                '/images/plans/heat_2.jpg',
+                '/images/plans/heat_3.jpg',
+                '/images/plans/heat_4.jpg',
+              ]}
+            ></Treatment>
           </div>
         </div>
       </section>
+
       <section className="home__reviews" id="reviews">
         <div className="reviews__content">
           <div className="reviews__headline">
@@ -183,12 +252,13 @@ const Home = () => {
               <Review
                 key={review.id}
                 review={review}
-                inverted={review.id % 2 !== 0 ? "" : "inverted"}
+                inverted={review.id % 2 !== 0 ? '' : 'inverted'}
               />
             ))}
           </div>
         </div>
       </section>
+
       <section className="home__contact" id="contact">
         <div className="contact__content">
           <div className="contact__section">
@@ -211,7 +281,7 @@ const Home = () => {
             <div
               className="contact__email"
               onClick={() =>
-                (window.location.href = "mailto:phxrecover@gmail.com")
+                (window.location.href = 'mailto:phxrecover@gmail.com')
               }
             >
               <h5>EMAIL</h5>
@@ -222,24 +292,24 @@ const Home = () => {
                 <h5>SOCIALS</h5>
                 <FontAwesomeIcon
                   className="contact__icon"
-                  icon={["fab", "facebook"]}
+                  icon={['fab', 'facebook']}
                   size="lg"
-                  onClick={() => window.open("https://www.facebook.com/")}
+                  onClick={() => window.open('https://www.facebook.com/')}
                 />
                 <FontAwesomeIcon
                   className="contact__icon"
-                  icon={["fab", "instagram"]}
+                  icon={['fab', 'instagram']}
                   size="lg"
                   onClick={() =>
-                    window.open("https://www.instagram.com/phxrecover")
+                    window.open('https://www.instagram.com/phxrecover')
                   }
                 />
                 <FontAwesomeIcon
                   className="contact__icon"
-                  icon={["fab", "linkedin-in"]}
+                  icon={['fab', 'linkedin-in']}
                   size="lg"
                   onClick={() =>
-                    window.open("https://www.linkedin.com/company/phxrecover")
+                    window.open('https://www.linkedin.com/company/phxrecover')
                   }
                 />
               </div>
@@ -249,7 +319,7 @@ const Home = () => {
             className="contact__session"
             onClick={() =>
               window.open(
-                "https://square.site/book/LF1SNP6G13F24/phoenix-wellness-recovery-miami-fl"
+                'https://square.site/book/LF1SNP6G13F24/phoenix-wellness-recovery-miami-fl'
               )
             }
           >
@@ -257,6 +327,7 @@ const Home = () => {
           </h3>
         </div>
       </section>
+
       <Footer />
     </div>
   );
