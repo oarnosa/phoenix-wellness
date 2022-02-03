@@ -138,7 +138,7 @@ const Home = () => {
               time="60"
             >
               <li>
-                Schedule <b>2</b> - 45 minute sessions amywhere, anytime including:
+                Schedule <b>2</b> &#8212; 45 minute sessions anywhere, anytime including:
               </li>
               <ul className="plan__list-sub">
                 <li>Manual treatment with focus on 2 problem areas</li>
@@ -167,7 +167,7 @@ const Home = () => {
               time="90"
             >
               <li>
-                Schedule <b>3</b> - 45 minute sessions amywhere, anytime including:
+                Schedule <b>3</b> &#8212; 45 minute sessions anywhere, anytime including:
               </li>
               <ul className="plan__list-sub">
                 <li>Manual treatment with focus on 2 problem areas</li>
@@ -195,7 +195,7 @@ const Home = () => {
               time="120"
             >
               <li>
-                Schedule <b>4</b> - 45 minute sessions amywhere, anytime including:
+                Schedule <b>4</b> &#8212; 45 minute sessions anywhere, anytime including:
               </li>
               <ul className="plan__list-sub">
                 <li>Manual treatment with focus on 2 problem areas</li>
