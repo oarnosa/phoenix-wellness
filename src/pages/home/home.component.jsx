@@ -134,7 +134,7 @@ const Home = () => {
               icon="/images/plans/plan-steel.png"
               name="STEEL"
               price="$115"
-              priceMonthly="$150"
+              priceMonthly="$200"
               time="60"
             >
               <li>
@@ -163,7 +163,7 @@ const Home = () => {
               icon="/images/plans/plan-gold.png"
               name="GOLD"
               price="$135"
-              priceMonthly="$200"
+              priceMonthly="$250"
               time="90"
             >
               <li>
@@ -191,7 +191,7 @@ const Home = () => {
               icon="/images/plans/plan-obsidian.png"
               name="OBSIDIAN"
               price="$170"
-              priceMonthly="$250"
+              priceMonthly="$300"
               time="120"
             >
               <li>
